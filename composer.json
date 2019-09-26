@@ -1,4 +1,5 @@
 {
+    "authors": [{"name": "Eric Khamvongsa"}],
     "type": "project",
     "license": "proprietary",
     "require": {
@@ -29,7 +30,7 @@
     },
     "require-dev": {
         "symfony/debug-pack": "*",
-        "symfony/maker-bundle": "^1.0",
+        "symfony/maker-bundle": "^1.13",
         "symfony/profiler-pack": "*",
         "symfony/test-pack": "*",
         "symfony/web-server-bundle": "4.3.*"
