@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% set tableau = ['1', 2, "dix-huit"] %}</br>
+    {% for  i in range(0, 5, 1) %}
+        {{ random(tableau) }}</br>
+    {% endfor %}
+    {{ date }}</br>
+    {% set alph = range("a","z") %} {# créer un tableau allant de "a" à "z" #}
+    {% for letter in alph %}
+        {{ letter | upper }}{# force majuscule #}
+    {% endfor %}
+    {{ dump(alph) }} {# affiche alph#}
+{% endblock %}
