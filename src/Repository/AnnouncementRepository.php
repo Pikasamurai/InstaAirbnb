@@ -22,29 +22,17 @@ class AnnouncementRepository extends ServiceEntityRepository
     // /**
     //  * @return Announcement[] Returns an array of Announcement objects
     //  */
-    /*
-    public function findByExampleField($value)
+    public function findTableau($limit): array
     {
-        return $this->createQueryBuilder('a')
-            ->andWhere('a.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('a.id', 'ASC')
-            ->setMaxResults(10)
+        return $this->createQueryBuilder('announcement')
+            ->setMaxResults($limit)
             ->getQuery()
-            ->getResult()
-        ;
+            ->getResult();
     }
-    */
-
-    /*
-    public function findOneBySomeField($value): ?Announcement
+    public function findTableauEnt(): array
     {
-        return $this->createQueryBuilder('a')
-            ->andWhere('a.exampleField = :val')
-            ->setParameter('val', $value)
+        return $this->createQueryBuilder('announcement')
             ->getQuery()
-            ->getOneOrNullResult()
-        ;
+            ->getResult();
     }
-    */
 }

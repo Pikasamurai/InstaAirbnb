@@ -13,11 +13,11 @@ class Task
      */
     private $title;
     /**
-     * @var
+     * @Assert\NotBlank()
      */
     private $content;
     /**
-     * @var
+     * @Assert\Type("integer")
      */
     private $price;
     /**
